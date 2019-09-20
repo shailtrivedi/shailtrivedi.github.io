@@ -1,0 +1,175 @@
+----------
+
+Thu Sep 19 2019 22:49:26 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Application Support/MobileSync/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:26 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Application Support/CallHistoryTransactions/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:26 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Application Support/com.apple.TCC/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:26 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Application Support/CallHistoryDB/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:26 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/IdentityServices/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Messages/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/HomeKit/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Mail/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Safari/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Suggestions/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Containers/com.apple.VoiceMemos/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Containers/com.apple.Home/': Operation not permitted
+warning: could not open directory 'Library/Containers/com.apple.Safari/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Containers/com.apple.iChat/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Containers/com.apple.mail/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Containers/com.apple.news/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Containers/com.apple.stocks/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/PersonalizationPortrait/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Metadata/CoreSpotlight/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Metadata/com.apple.IntelligentSuggestions/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Cookies/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Caches/CloudKit/com.apple.Safari/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:27 GMT-0700 (PDT)
+
+warning: could not open directory 'Library/Caches/com.apple.Safari/': Operation not permitted
+
+
+----------
+
+Thu Sep 19 2019 22:49:30 GMT-0700 (PDT)
+
+warning: adding embedded git repository: .Trash/discourse
+hint: You've added another git repository inside your current repository.
+hint: Clones of the outer repository will not contain the contents of
+hint: the embedded repository and will not know how to obtain it.
+hint: If you meant to add a submodule, use:
+hint: 
+hint: 	git submodule add <url> .Trash/discourse
+hint: 
+hint: If you added this path by mistake, you can remove it from the
+hint: index with:
+hint: 
+hint: 	git rm --cached .Trash/discourse
+hint: 
+hint: See "git help submodule" for more information.
+
+
