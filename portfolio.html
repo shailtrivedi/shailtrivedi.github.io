@@ -15,7 +15,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
     <title>Shail Trivedi | Project Portfolio</title>
     
     <!-- Icons -->
@@ -32,24 +32,390 @@
 
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
 
-
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
 
+    <!-- Magnific Popup CSS -->
+    <style>
+        .mfp-bg {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1042;
+          overflow: hidden;
+          position: fixed;
+          background: #000;
+          opacity: 1; }
+
+        .mfp-wrap {
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1043;
+          position: fixed;
+          outline: none !important;
+          -webkit-backface-visibility: hidden; }
+
+        .mfp-container {
+          text-align: center;
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          padding: 0 8px;
+          box-sizing: border-box; }
+
+        .mfp-container:before {
+          content: '';
+          display: inline-block;
+          height: 100%;
+          vertical-align: middle; }
+
+        .mfp-align-top .mfp-container:before {
+          display: none; }
+
+        .mfp-content {
+          position: relative;
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 auto;
+          text-align: left;
+          z-index: 1045; }
+
+        .mfp-inline-holder .mfp-content,
+        .mfp-ajax-holder .mfp-content {
+          width: 100%;
+          cursor: auto; }
+
+        .mfp-ajax-cur {
+          cursor: progress; }
+
+        .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+          cursor: -moz-zoom-out;
+          cursor: -webkit-zoom-out;
+          cursor: zoom-out; }
+
+        .mfp-zoom {
+          cursor: pointer;
+          cursor: -webkit-zoom-in;
+          cursor: -moz-zoom-in;
+          cursor: zoom-in; }
+
+        .mfp-auto-cursor .mfp-content {
+          cursor: auto; }
+
+        .mfp-close,
+        .mfp-arrow,
+        .mfp-preloader,
+        .mfp-counter {
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          user-select: none; }
+
+        .mfp-loading.mfp-figure {
+          display: none; }
+
+        .mfp-hide {
+          display: none !important; }
+
+        .mfp-preloader {
+          color: #CCC;
+          position: absolute;
+          top: 50%;
+          width: auto;
+          text-align: center;
+          margin-top: -0.8em;
+          left: 8px;
+          right: 8px;
+          z-index: 1044; }
+          .mfp-preloader a {
+            color: #CCC; }
+            .mfp-preloader a:hover {
+              color: #FFF; }
+
+        .mfp-s-ready .mfp-preloader {
+          display: none; }
+
+        .mfp-s-error .mfp-content {
+          display: none; }
+
+        button.mfp-close,
+        button.mfp-arrow {
+          overflow: visible;
+          cursor: pointer;
+          background: transparent;
+          border: 0;
+          -webkit-appearance: none;
+          display: block;
+          outline: none;
+          padding: 0;
+          z-index: 1046;
+          box-shadow: none;
+          touch-action: manipulation; }
+
+        button::-moz-focus-inner {
+          padding: 0;
+          border: 0; }
+
+        .mfp-close {
+          width: 44px;
+          height: 44px;
+          line-height: 44px;
+          position: absolute;
+          right: 0;
+          top: 0;
+          text-decoration: none;
+          text-align: center;
+          opacity: 0.65;
+          padding: 0 0 18px 10px;
+          color: #FFF;
+          font-style: normal;
+          font-size: 28px;
+          font-family: 'Poppins', 'Roboto', sans-serif; }
+          .mfp-close:hover,
+          .mfp-close:focus {
+            opacity: 1; }
+          .mfp-close:active {
+            top: 1px; }
+
+        .mfp-close-btn-in .mfp-close {
+          color: #333; }
+
+        .mfp-image-holder .mfp-close,
+        .mfp-iframe-holder .mfp-close {
+          color: #FFF;
+          right: -6px;
+          text-align: right;
+          padding-right: 6px;
+          width: 100%; }
+
+        .mfp-counter {
+          position: absolute;
+          top: 0;
+          right: 0;
+          color: #CCC;
+          font-size: 12px;
+          line-height: 18px;
+          white-space: nowrap; }
+
+        .mfp-arrow {
+          position: absolute;
+          opacity: 0.65;
+          margin: 0;
+          top: 50%;
+          margin-top: -55px;
+          padding: 0;
+          width: 90px;
+          height: 110px;
+          -webkit-tap-highlight-color: transparent; }
+          .mfp-arrow:active {
+            margin-top: -54px; }
+          .mfp-arrow:hover,
+          .mfp-arrow:focus {
+            opacity: 1; }
+          .mfp-arrow:before,
+          .mfp-arrow:after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin-top: 35px;
+            margin-left: 35px;
+            border: medium inset transparent; }
+          .mfp-arrow:after {
+            border-top-width: 13px;
+            border-bottom-width: 13px;
+            top: 8px; }
+          .mfp-arrow:before {
+            border-top-width: 21px;
+            border-bottom-width: 21px;
+            opacity: 0.7; }
+
+        .mfp-arrow-left {
+          left: 0; }
+          .mfp-arrow-left:after {
+            border-right: 17px solid #FFF;
+            margin-left: 31px; }
+          .mfp-arrow-left:before {
+            margin-left: 25px;
+            border-right: 27px solid #3F3F3F; }
+
+        .mfp-arrow-right {
+          right: 0; }
+          .mfp-arrow-right:after {
+            border-left: 17px solid #FFF;
+            margin-left: 39px; }
+          .mfp-arrow-right:before {
+            border-left: 27px solid #3F3F3F; }
+
+        .mfp-iframe-holder {
+          padding-top: 40px;
+          padding-bottom: 40px; }
+          .mfp-iframe-holder .mfp-content {
+            line-height: 0;
+            width: 100%;
+            max-width: 900px; }
+          .mfp-iframe-holder .mfp-close {
+            top: -40px; }
+
+        .mfp-iframe-scaler {
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+          padding-top: 56.25%; }
+          .mfp-iframe-scaler iframe {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            background: #000; }
+
+        /* Main image in popup */
+        img.mfp-img {
+          width: auto;
+          max-width: 100%;
+          height: auto;
+          display: block;
+          line-height: 0;
+          box-sizing: border-box;
+          padding: 40px 0 40px;
+          margin: 0 auto; }
+
+        /* The shadow behind the image */
+        .mfp-figure {
+          line-height: 0; }
+          .mfp-figure:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 40px;
+            bottom: 40px;
+            display: block;
+            right: 0;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+            background: #444; }
+          .mfp-figure small {
+            color: #BDBDBD;
+            display: block;
+            font-size: 12px;
+            line-height: 14px; }
+          .mfp-figure figure {
+            margin: 0; }
+
+        .mfp-bottom-bar {
+          margin-top: -36px;
+          position: absolute;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          cursor: auto; }
+
+        .mfp-title {
+          text-align: left;
+          line-height: 18px;
+          color: #F3F3F3;
+          word-wrap: break-word;
+          padding-right: 36px; }
+
+        .mfp-image-holder .mfp-content {
+          max-width: 100%; }
+
+        .mfp-gallery .mfp-image-holder .mfp-figure {
+          cursor: pointer; }
+
+        @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
+          /**
+               * Remove all paddings around the image on small screen
+               */
+          .mfp-img-mobile .mfp-image-holder {
+            padding-left: 0;
+            padding-right: 0; }
+          .mfp-img-mobile img.mfp-img {
+            padding: 0; }
+          .mfp-img-mobile .mfp-figure:after {
+            top: 0;
+            bottom: 0; }
+          .mfp-img-mobile .mfp-figure small {
+            display: inline;
+            margin-left: 5px; }
+          .mfp-img-mobile .mfp-bottom-bar {
+            background: rgba(0, 0, 0, 0.6);
+            bottom: 0;
+            margin: 0;
+            top: auto;
+            padding: 3px 5px;
+            position: fixed;
+            box-sizing: border-box; }
+            .mfp-img-mobile .mfp-bottom-bar:empty {
+              padding: 0; }
+          .mfp-img-mobile .mfp-counter {
+            right: 5px;
+            top: 3px; }
+          .mfp-img-mobile .mfp-close {
+            top: 0;
+            right: 0;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            text-align: center;
+            padding: 0; } }
+
+        @media all and (max-width: 900px) {
+          .mfp-arrow {
+            -webkit-transform: scale(0.75);
+            transform: scale(0.75); }
+          .mfp-arrow-left {
+            -webkit-transform-origin: 0;
+            transform-origin: 0; }
+          .mfp-arrow-right {
+            -webkit-transform-origin: 100%;
+            transform-origin: 100%; }
+          .mfp-container {
+            padding-left: 6px;
+            padding-right: 6px; } }
+    </style>
 </head>
 
 <body>
 
+    <!--Delayed Popup-->
+    <div id="newsletter-form" class="white-popup mfp-hide">
+      <h2  class="popup-title">Thanks for visiting my site!</h2>
+        <p class="popup-text">Feel free to reach out if you'd like a copy of my <a class="text-link" href="mailto:resume-request@shailtrivedi.com?subject=Requesting%20your%20resume&body=Hi%20Shail%2C%0D%0A%0D%0AI%20came%20across%20your%20website%20and%20I%20was%20hoping%20to%20get%20a%20copy%20of%20your%20resume.%0D%0A" target="_blank" rel="noopener noreferrer">resume</a> or give me a <a class="text-link" href="tel:1-510-470-4301">call</a> if you want to connect further.</p>
+        
+
+            <ul class="social-ul">
+                <li class="site-social"><a href="https://www.linkedin.com/in/shailtrivedi" target="_blank" rel="noopener noreferrer"><i class="ion-social-linkedin"></i></a></li>
+                <li class="site-social"><a href="mailto:contact-me@shailtrivedi.com?subject=Landed%20on%20your%20website%20%7C%20Let's%20Connect!&body=Hi%20Shail%2C%0D%0A%0D%0AI%20came%20across%20your%20website%20and%20was%20interested%20to%20learn%20more%20about%20you%2Fconnect%20further." target="_blank" rel="noopener noreferrer"><i class="ion-email"></i></a></li>
+                <li class="site-social"><a href="https://www.twitter.com/theshailtrivedi" target="_blank" rel="noopener noreferrer"><i class="ion-social-twitter"></i></a></li>
+                <li class="site-social"><a href="https://www.facebook.com/shailktrivedi" target="_blank" rel="noopener noreferrer"><i class="ion-social-facebook"></i></a></li>
+            </ul>
+    </div> 
+    <!--End Delayed Popup-->
+    
     <div class="container-fluid">
         <!-- site-header -->
         <header class="site-header">
             <div class="site-logo">
-                <a href="shailtrivedi.com" class="site-logo-link" width="40px">st</a>
+                <a href="https://shailtrivedi.com" class="site-logo-link" width="40px">st</a>
             </div>
             <!-- site-nav -->
             <a class="site-primary-nav-trigger" href="#0">
@@ -69,12 +435,10 @@
 
                 <li class="site-label">Let's Connect!</li>
 
-                <li class="site-social"><a href="https://www.linkedin.com/in/shailtrivedi" target="_blank" rel="noopener noreferrer"><i class="ion-social-linkedin"></i></a></li>
-                <li class="site-social"><a href="mailto:shail.k.trivedi@gmail.com?subject=Landed%20on%20your%20website%20%7C%20Let's%20Connect!&body=Hi%20Shail%2C%0D%0A%0D%0AI%20came%20across%20your%20website%20and%20was%20interested%20to%20learn%20more%20about%20you%2Fconnect%20further." target="_blank" rel="noopener noreferrer"><i class="ion-email"></i></a></li>
-                <li class="site-social"><a href="https://www.twitter.com/theshailtrivedi" target="_blank" rel="noopener noreferrer"><i class="ion-social-twitter"></i></a></li>
-                <li class="site-social"><a href="https://www.facebook.com/shailktrivedi" target="_blank" rel="noopener noreferrer"><i class="ion-social-facebook"></i></a></li>
-                
-                
+                <li class="site-social"><a href="https://www.linkedin.com/in/shailtrivedi" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                <li class="site-social"><a href="mailto:contact-me@shailtrivedi.com?subject=Landed%20on%20your%20website%20%7C%20Let's%20Connect!&body=Hi%20Shail%2C%0D%0A%0D%0AI%20came%20across%20your%20website%20and%20was%20interested%20to%20learn%20more%20about%20you%2Fconnect%20further." target="_blank" rel="noopener noreferrer"><ion-icon name="mail"></ion-icon></a></li>
+                <li class="site-social"><a href="https://www.twitter.com/theshailtrivedi" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li class="site-social"><a href="https://www.facebook.com/shailktrivedi" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-facebook"></ion-icon></a></li>
             </ul>
         </nav>
         <!-- end nav -->
@@ -106,14 +470,14 @@
                     <div class="col-md-4 col-sm-6  fashion logo">
                         <a href="single-project" class="portfolio_item">
                             <img src="img/portfolio/Portfolio_Tile_5.png" alt="image" class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Mockups in seconds</span>
-                                        <em>Fashion / Logo</em>
-                                    </div>
+                        <div class="portfolio_item_hover">
+                            <div class="portfolio-border clearfix">
+                                <div class="item_info">
+                                    <span>Make-a-Thon 2018 Finalist</span>
+                                    <em>Prototyping</em>
                                 </div>
                             </div>
+                        </div>
                         </a>
                     </div>
                     <!-- end single work -->
@@ -125,8 +489,8 @@
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Floating mockups</span>
-                                        <em>Ads / Graphics</em>
+                                        <span>Electric Skateboard Design</span>
+                                        <em>Product Design</em>
                                     </div>
                                 </div>
                             </div>
@@ -141,8 +505,8 @@
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Photorealistic smartwatch</span>
-                                        <em>Photography</em>
+                                        <span>Formula Racing Electric (FSAE)</span>
+                                        <em>Manufacturing</em>
                                     </div>
                                 </div>
                             </div>
@@ -157,8 +521,8 @@
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Held by hands</span>
-                                        <em>Fashion / Ads</em>
+                                        <span>Optical Encoder Design</span>
+                                        <em>Computer Aided Design</em>
                                     </div>
                                 </div>
                             </div>
@@ -169,12 +533,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project" class="portfolio_item">
-                            <img src="img/portfolio/05.jpg" alt="image" class="img-responsive" />
+                            <img src="img/portfolio/Portfolio_Tile_10.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>Apple Airpods Design</span>
+                                        <em>Computer Aided Design</em>
                                     </div>
                                 </div>
                             </div>
@@ -185,12 +549,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-12 photography">
                         <a href="single-project" class="portfolio_item">
-                            <img src="img/portfolio/010.jpg" alt="image" class="img-responsive" />
+                            <img src="img/portfolio/Portfolio_Tile_6.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Photorealistic smartwatch</span>
-                                        <em>Photography</em>
+                                        <span>HackDavis 2019 Finalist</span>
+                                        <em>Product Design</em>
                                     </div>
                                 </div>
                             </div>
@@ -201,12 +565,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project" class="portfolio_item">
-                            <img src="img/portfolio/06.jpg" alt="image" class="img-responsive" />
+                            <img src="img/portfolio/Portfolio_Tile_1.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>Mecanum Wheel Design</span>
+                                        <em>Computer Aided Design</em>
                                     </div>
                                 </div>
                             </div>
@@ -217,12 +581,12 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project" class="portfolio_item">
-                            <img src="img/portfolio/07.jpg" alt="image" class="img-responsive" />
+                            <img src="img/portfolio/Portfolio_Tile_4.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>Surgical Scope Design</span>
+                                        <em>Electronics</em>
                                     </div>
                                 </div>
                             </div>
@@ -233,12 +597,28 @@
                     <!-- single work -->
                     <div class="col-md-4 col-sm-6 graphics ads">
                         <a href="single-project" class="portfolio_item">
-                            <img src="img/portfolio/08.jpg" alt="image" class="img-responsive" />
+                            <img src="img/portfolio/Portfolio_Tile_9.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
-                                        <span>Mobile devices</span>
-                                        <em>Graphics / Ads</em>
+                                        <span>Automated Chicken Coop Door</span>
+                                        <em>Prototyping</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+                    
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 graphics ads">
+                        <a href="single-project" class="portfolio_item">
+                            <img src="img/portfolio/Portfolio_Tile_2.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Fingerprint Activated Door Lock</span>
+                                        <em>Electronics</em>
                                     </div>
                                 </div>
                             </div>
@@ -265,9 +645,8 @@
     <!-- end footer -->
 
     <!-- back to top -->
-    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <a href="#0" class="cd-top"><ion-icon name="arrow-up"></ion-icon></a>
     <!-- end back to top -->
-
 
 
 
@@ -283,6 +662,8 @@
     <!--  custom script -->
     <script src="js/custom.js"></script>
 
+    <!--  Ionicons Package -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,5 @@
 $(window).load(function () {
 
-    // preloader
-//    $('#preloader').delay(250).fadeOut('slow'); // will fade out the white DIV that covers the website.
-//    $('body').delay(250).css({
-//        'overflow': 'visible'
-//    });
-
-
     //localStorage.setItem('exitintent_show', 'true'); // Set the flag in localStorage
     
     //  isotope
