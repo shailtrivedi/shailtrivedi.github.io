@@ -1,6 +1,4 @@
 $(window).load(function () {
-
-    //localStorage.setItem('exitintent_show', 'true'); // Set the flag in localStorage
     
     //  isotope
     var $container = $('.portfolio_container');
