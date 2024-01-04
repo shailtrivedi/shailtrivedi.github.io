@@ -37,4 +37,13 @@ SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml text/x-js text/js 
 </IfModule>
 
+#remove html file extension https://example.com/page.html
+# to https://example.com/page
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.html [NC, L]
+</IfModule>
+
 ## EXPIRES CACHING ##
