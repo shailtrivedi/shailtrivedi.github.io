@@ -22,6 +22,10 @@
   }
 }
 
+p {
+  margin-bottom: 10px;
+}
+
 .navbar-logo-left-container {
   z-index: 5;
   width: 1030px;
@@ -752,7 +756,8 @@
 .footer-wrapper-three {
   justify-content: space-between;
   align-items: center;
-  padding-left: 100px;
+  padding-top: 20px;
+  padding-left: 40px;
   display: flex;
 }
 
@@ -786,12 +791,12 @@
   margin-left: 32px;
 }
 
-.footer-divider-two {
+.footer-divider {
   width: 100%;
   height: 1px;
   background-color: #e4ebf3;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-bottom {
@@ -1003,6 +1008,10 @@
   display: flex;
 }
 
+.bold-text.statusindicator {
+  color: #068836;
+}
+
 @media screen and (max-width: 991px) {
   .container {
     max-width: 728px;
@@ -1040,6 +1049,10 @@
   .menu-button.w--open {
     color: #fff;
     background-color: #a6b1bf;
+  }
+
+  .container-3 {
+    padding-right: 40px;
   }
 
   .container-4 {
@@ -1086,7 +1099,8 @@
   }
 
   .footer-social-block-three {
-    margin-top: 40px;
+    margin-top: 10px;
+    margin-left: -20px;
   }
 
   .nav-menu-wrapper-2 {
@@ -1191,6 +1205,10 @@
     padding-right: 60px;
   }
 
+  .columns, .project {
+    flex-direction: column;
+  }
+
   .testimonial-column-light {
     padding: 60px 15px;
   }
@@ -1247,6 +1265,10 @@
 
   .footer-form-input {
     width: 100%;
+  }
+
+  .footer-wrapper-three {
+    padding-left: 60px;
   }
 
   .footer-block-three {
@@ -1348,12 +1370,57 @@
 }
 
 @media screen and (max-width: 479px) {
+  p {
+    font-size: 12px;
+  }
+
   .container {
     max-width: none;
   }
 
   .nav-menu-two {
     flex-direction: column;
+  }
+
+  .column {
+    padding-left: 10px;
+  }
+
+  .socialbutton.emailbutton, .socialbutton.githubbutton, .socialbutton.linkedinbutton {
+    height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .paragraph {
+    font-size: 11px;
+  }
+
+  .heading {
+    font-size: 21px;
+  }
+
+  .project-thumbnail {
+    max-height: 130px;
+    max-width: 130px;
+    display: block;
+  }
+
+  .project-description {
+    text-align: left;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 12px;
+  }
+
+  .project {
+    margin-right: 10px;
+  }
+
+  .project-image {
+    max-height: 130px;
+    max-width: 130px;
   }
 
   .container-4 {
@@ -1372,6 +1439,10 @@
     margin-bottom: 24px;
   }
 
+  .testimonial-slider {
+    margin-top: 20px;
+  }
+
   .testimonial-slide-wrapper {
     max-width: 100%;
     margin-right: 0%;
@@ -1380,6 +1451,19 @@
   .testimonial-card {
     margin-left: 10px;
     margin-right: 10px;
+    padding: 10px;
+  }
+
+  .testimonial-info {
+    flex-direction: column;
+  }
+
+  .testimonial-author {
+    font-size: 18px;
+  }
+
+  .tagline {
+    font-size: 10px;
   }
 
   .testimonial-slider-left {
@@ -1388,6 +1472,10 @@
 
   .testimonial-slider-right {
     right: -10px;
+  }
+
+  .footer-subscribe {
+    padding-top: 10px;
   }
 
   .footer-form-two {
@@ -1410,14 +1498,26 @@
     right: 0;
   }
 
+  .footer-social-block-three {
+    margin-left: -20px;
+  }
+
   .footer-bottom {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
   }
 
+  .footer-copyright {
+    font-size: 12px;
+  }
+
   .nav-menu-two-2 {
     flex-direction: column;
+  }
+
+  .paragraph-2, .bold-text-2, .paragraph-3 {
+    font-size: 12px;
   }
 }
 
